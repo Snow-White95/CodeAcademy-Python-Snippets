@@ -1,0 +1,53 @@
+import time
+
+# madlib.py
+
+print "Welcome to MadLib!"
+
+noun1 = raw_input("Insert a Noun: ")
+for word in noun1:
+  if len(noun1) > 0 and noun1.isalpha():
+    noun1.capitalize()
+    print 
+  else:
+    print "Error: Please insert letters."
+    noun1 = raw_input("Insert a Noun: ")
+    print 
+
+noun2 = raw_input("Insert Another Noun: ")
+if len(noun2) > 0 and noun2.isalpha():
+  noun2[0].upper() + noun2[1:]
+  print 
+else:
+  print "Error: Please insert letters."
+  
+past_verb = raw_input("Insert a Past Tense Verb: ")
+if len(past_verb) > 0 and past_verb.isalpha():
+  print 
+else:
+  print "Error: Please insert letters."
+  
+pronoun = raw_input("Insert a Pronoun: ")
+if len(pronoun) > 0 and pronoun.isalpha():
+  print 
+else:
+  print "Error: Please insert letters."
+
+  
+  
+print """Once upon a time there was a prince named %s who wanted to marry a %s,
+but she would have to be a real %s. He %s all over the world to find one, 
+but nowhere could he get what he wanted. There were %s enough, but it was 
+difficult to find out whether they were real ones. There was always something 
+about them that was not as it should be. So he came home again and was sad, 
+for he would have liked very much to have a real %s.
+One evening a terrible storm came on; there was thunder and lightning, 
+and the rain poured down in torrents. Suddenly a knocking was heard at the 
+city gate, and the old king went to open it.
+It was a %s standing out there in front of the gate. But, good gracious! 
+what a sight the rain and the wind had made %s look. The water ran down from 
+%s hair and clothes; it ran down into the toes of %s shoes and out again at 
+the heels. And yet she said that she was a real %s.""" %(noun2, noun1, noun1, past_verb, noun1, noun1, noun1, pronoun, pronoun, pronoun, noun1)
+
+
+time.sleep(1000)
